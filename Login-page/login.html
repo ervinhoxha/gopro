@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../style1.css">
+    <link rel="icon" href="../Img/logo.png">
+    <script src="../JavaScript/login.js"></script>
+    <script src="../JavaScript/signup.js"></script>
+    <title>Log In</title>
+    
+</head>
+<body>
+    <div id="nav" class="fixed-top">
+        <img src="../Img/logoo.png">
+        <div class="navbar">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="navbar">
+            <a href="../About-page/about.html">About</a>
+        </div>
+        <div class="navbar">
+            <a href="../Contact-page/contact.html">Contact</a>
+        </div>
+        <div class="navbar">
+            <a href="login.html">Login</a>
+        </div>
+        
+    </div>
+
+
+    <div class="login-page">
+        <div class="form">
+        <form class="register-form">
+            <input type="text" id="fullname" placeholder="Full-name">
+            <input type="text" id="username1" placeholder="Username">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password1" placeholder="Password">
+            <button type="submit" onclick="reg()">Create</button>
+            <p class="message">Already Registered? <a>Login</a></p>
+        </form>
+
+        <form class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" onclick="log()">Login</button>
+            <p class="message">Not Registered? <a>Register</a></p>
+        </form>
+    </div> 
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+
+    </script> 
+
+    
+    <!-- <div> -->
+
+            <!-- --------------------------------- -->
+            
+            <!-- <hr>
+            <footer>
+                <p id="parg">Find me on</p>
+        
+                <div class="footers">
+                    <a href="#instagram">Instagram</a>
+                    <a href="#Facebook">Facebook</a>
+                    <a href="#Youtube">Youtube</a>
+                    <a href="#GitHub">GitHub</a>
+                    <a href="#Reddit">Reddit</a>
+                </div>
+        
+            </footer>
+    </div> -->
+
+</body>
+</html>

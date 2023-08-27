@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GoPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img/logo.png">
+</head>
+<body>                                  
+    <header>
+        <div id="nav" class="fixed-top">
+            <img src="Img/logoo.png">
+            <div class="navbar">
+                <a href="#">Home</a>
+            </div>
+            <div class="navbar">
+                <a href="About-page/about.html">About</a>
+            </div>
+            <div class="navbar">
+                <a href="Contact-page/contact.html">Contact</a>
+            </div>
+            <div class="navbar">
+                <a href="Login-page/login.html">Login</a>
+            </div>
+            
+        </div>
+
+    </header>
+
+    
+    
+    <main>
+        <div class="Container">
+            <img src="Img/GoPro-HERO9-1.jpg" >
+        </div>
+        <div class="main-container">
+            <div class="container-left">
+                <img src="Img/main.png">
+            </div>
+            <div class="container-right">
+                <h2>About Us</h2> 
+                <p>GoPro frees people to celebrate the moment, 
+                    inspiring others to do the same. From 
+                    cameras to apps and accessories, 
+                    everything we do is geared to help you 
+                    capture life as you live it, share the 
+                    experience and pass on the stoke. We 
+                    believe that sharing our experiences makes 
+                    them more meaningful and way more fun...</p>
+                    <a href="About-page/about.html" class="ab">Read more</a>
+            </div>
+        </div>
+        <br>
+    </main>
+        
+    <main-2>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="img/pic1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/pic2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/pic3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/pic4.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/pic5.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },3000);
+        </script>
+    </main-2>
+    <div>
+    <!-- --------------------------------- -->
+    <hr>
+    <footer>
+        <p id="parg">Find me on</p>
+
+        <div class="footers">
+            <a href="#instagram">Instagram</a>
+            <a href="#Facebook">Facebook</a>
+            <a href="#Youtube">Youtube</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Reddit">Reddit</a>
+        </div>
+
+    </footer>
+    </div>
+
+            
+    
+    
+    
+    
+</body>
+</html>
